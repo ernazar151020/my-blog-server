@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  erablog:
+    image: erablog
+    container_name: erablog_backend
+    restart: always
+    ports:
+      - 4444:4444
+    volumes:
+      - ./.env:/app/.env
